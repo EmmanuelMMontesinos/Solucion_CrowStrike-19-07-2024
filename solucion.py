@@ -24,12 +24,11 @@ if __name__ == "__main__":
             os.remove(r"C:\\Windows\\System32\\drivers\\CrowdStrike\\C-00000291*.sys")
             print("El archivo 'C-00000291*.sys' ha sido eliminado con exito.")
             print("Reinicie el equipo en modo normal.\nCreado por @EmmanuelMMontesinos con la solución de la comunidad")
-            exit_program()
         else:
             print("No existe el archivo problemático 'C-00000291*.sys'")
-            exit_program()
     # Si no esta en modo seguro
     else:
         print("El sistema no está en modo seguro.")
         print("Reinicie el PC en Modo seguro y vuelva a ejecutar el programa")
-        exit_program()
+    
+    exit_program() # En cualquiera de los casos enviamos el mensaje para salir
